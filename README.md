@@ -11,3 +11,12 @@ docker run -d \                                                                 
 -v mongo-db:/data/db \
 mongo
 ```
+### MongoDB URL
+1. If the backend run on local Machine and mongoDB run on Docker Container
+```bash
+mongoUrl = mongodb://root:admin@localhost:27017/myDatabase?authSource=admin
+```
+2. If both run on Docker Container
+```bash
+mongoUrl = mongodb://root:admin@my-mongo:27017/myDatabase?authSource=admin
+```
